@@ -47,18 +47,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the Simple Machines category
-        TextView simplemachines = (TextView) findViewById(R.id.simplemachines);
+        TextView energysources = (TextView) findViewById(R.id.energysources);
 
         // Set a click listener on that View
-        simplemachines.setOnClickListener(new View.OnClickListener() {
+        energysources.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent simplemachineIntent = new Intent(MainActivity.this, SimpleMachines.class);
+                Intent energysourceIntent = new Intent(MainActivity.this, EnergySources.class);
 
                 // Start the new activity
-                startActivity(simplemachineIntent);
+                startActivity(energysourceIntent);
             }
         });
 
@@ -80,20 +80,38 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Find the View that shows the Simple Machines category
-        TextView electricity = (TextView) findViewById(R.id.electricity);
+        TextView environment = (TextView) findViewById(R.id.environment);
 
         // Set a click listener on that View
-        electricity.setOnClickListener(new View.OnClickListener() {
+        environment.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent electricityIntent = new Intent(MainActivity.this, Electricity.class);
+                Intent environmentIntent = new Intent(MainActivity.this, Environment.class);
 
                 // Start the new activity
-                startActivity(electricityIntent);
+                startActivity(environmentIntent);
             }
         });
+
+
+        // Find the View that shows the Simple Machines category
+        TextView question_answer = (TextView) findViewById(R.id.question_answer);
+
+        // Set a click listener on that View
+        question_answer.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent question_answerIntent = new Intent(MainActivity.this, QuestionAnswerActivity.class);
+
+                // Start the new activity
+                startActivity(question_answerIntent);
+            }
+        });
+
 
 
     }
